@@ -1,3 +1,14 @@
+## OctoWoW changes compared to the original
+
+Original: **shagu/ShaguPlates**. This fork (by Dinkleberrrg) changes:
+
+- No more "Couldn't load Blizzard_CombatText: Disabled" chat message when Blizzard combat text is turned off.
+- Added the font `fonts/Prototype.ttf`.
+
+Details: [CHANGELOG.md](CHANGELOG.md)
+
+---
+
 # ShaguPlates
 
 <a href="preview/rounded.jpg"><img src="preview/rounded.jpg" float="right" align="right" width="320"></a>
