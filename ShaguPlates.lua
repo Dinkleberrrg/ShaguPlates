@@ -375,5 +375,12 @@ function ShaguPlates.SetupCVars()
   COMBAT_TEXT_SHOW_MANA = "1"
   COMBAT_TEXT_FLOAT_MODE = "1"
   COMBAT_TEXT_SHOW_HONOR_GAINED = "1"
-  UIParentLoadAddOn("Blizzard_CombatText")
+
+  -- [patch] Blizzard_CombatText ist bewusst abgeschaltet (doppelte Zahlen
+  -- neben MSBT). UIParentLoadAddOn schreibt in dem Fall bei jedem Reload
+  -- "Couldn't load Blizzard_CombatText: Disabled" in den Chat.
+  -- IsAddOnLoadable prueft das vorher und bleibt still.
+  if IsAddOnLoadable("Blizzard_CombatText") then
+    UIParentLoadAddOn("Blizzard_CombatText")
+  end
 end
