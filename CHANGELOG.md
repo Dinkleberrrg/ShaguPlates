@@ -4,6 +4,14 @@
 
 **Base:** shagu/ShaguPlates `9b2ebdf` (2025-06-06)
 
+
+## Releases
+
+Version scheme: `<upstream version>-octo.<n>`. Each release is a git tag `v<version>`; older versions can be downloaded from the tag page on GitHub.
+
+### 5.4.21-octo.1 – 2026-10-03
+- First tagged release with the changes listed below.
+
 ## Changes
 
 ### ShaguPlates.lua – no error message when Blizzard_CombatText is disabled
