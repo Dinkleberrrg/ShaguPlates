@@ -1,13 +1,13 @@
 # Changelog OctoWoW – ShaguPlates
 
-> Branch `octowow` = Stand aus Henrys Installation „OctoWoW – HD Upgrade“ (WoW 1.12). Eigene Anpassungen sind im Code mit `-- [patch]` markiert.
+> Branch `octowow` = the state from Henry's "OctoWoW – HD Upgrade" install (WoW 1.12). Own changes are marked with `-- [patch]` in the code.
 
-**Basis:** shagu/ShaguPlates `9b2ebdf` (2025-06-06)
+**Base:** shagu/ShaguPlates `9b2ebdf` (2025-06-06)
 
-## Änderungen
+## Changes
 
-### ShaguPlates.lua – keine Fehlermeldung bei deaktiviertem Blizzard_CombatText
-Blizzard_CombatText ist bewusst abgeschaltet (sonst doppelte Kampfzahlen neben MikScrollingBattleText). `UIParentLoadAddOn("Blizzard_CombatText")` schrieb dann bei jedem Reload „Couldn't load Blizzard_CombatText: Disabled“ in den Chat. Jetzt wird vorher mit `IsAddOnLoadable` geprüft.
+### ShaguPlates.lua – no error message when Blizzard_CombatText is disabled
+Blizzard_CombatText is disabled on purpose (otherwise combat numbers show twice next to MikScrollingBattleText). `UIParentLoadAddOn("Blizzard_CombatText")` then printed "Couldn't load Blizzard_CombatText: Disabled" to chat on every reload. It is now checked with `IsAddOnLoadable` first.
 
-### fonts/Prototype.ttf – neu
-Schriftart „Prototype“ hinzugefügt, damit sie UI-weit einheitlich verfügbar ist (auch in MSBT und Bagshui).
+### fonts/Prototype.ttf – new
+Added the "Prototype" font so it is available UI-wide (also used in MSBT and Bagshui).
