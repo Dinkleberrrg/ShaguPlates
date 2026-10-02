@@ -1,6 +1,6 @@
 # Changelog OctoWoW – ShaguPlates
 
-> Branch `octowow` = the state from Henry's "OctoWoW – HD Upgrade" install (WoW 1.12). Own changes are marked with `-- [patch]` in the code.
+> Branch `octowow` = the state from Dinkleberrrg's "OctoWoW – HD Upgrade" install (WoW 1.12). Own changes are marked with `-- [patch]` in the code.
 
 **Base:** shagu/ShaguPlates `9b2ebdf` (2025-06-06)
 
